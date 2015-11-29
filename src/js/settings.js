@@ -1,5 +1,5 @@
 /*globals DLG */
-DLG.positions = {
+DLG.settings = {
   draftkings: {
     nfl: {
       'QB': {count: 1, positions: ['QB']},

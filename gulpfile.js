@@ -11,7 +11,7 @@ var $ = require('gulp-load-plugins')();
 
 //html
 gulp.task('html', function () {
-    gulp.src(['./src/**/*.html', './src/**/*.php', './src/**/*.json'])
+    gulp.src(['./src/**/*.html', './src/**/*.csv', './src/**/*.json'])
   .pipe($.fileInclude({
     prefix: '@@',
     basepath: '@file'
@@ -67,7 +67,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('rev', function(){
-    return gulp.src(['.tmp/**/**','!.tmp/**/**.html', '!.tmp/**/**.json'])
+    return gulp.src(['.tmp/**/**','!.tmp/**/**.html', '!.tmp/**/**.csv', '!.tmp/**/**.json'])
         .pipe($.rev())
         .pipe(gulp.dest('dist/'))
         .pipe($.rev.manifest())
