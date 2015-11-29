@@ -1,0 +1,38 @@
+{
+  "name": "dfs-lineup-generator",
+  "version": "0.0.1",
+  "description": "Lineup Generator",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wernull/DFS-Lineup-Generator.git"
+  },
+  "author": "Kyle Werner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wernull/DFS-Lineup-Generator/issues"
+  },
+  "homepage": "https://github.com/wernull/DFS-Lineup-Generator#readme",
+  "devDependencies": {
+    "del": "~1.2.0",
+    "gulp": "~3.9.0",
+    "gulp-autoprefixer": "~2.3.1",
+    "gulp-cache": "~0.2.10",
+    "gulp-concat": "~2.5.2",
+    "gulp-connect": "~2.2.0",
+    "gulp-file-include": "^0.13.7",
+    "gulp-htmlmin": "^1.1.3",
+    "gulp-jshint": "~1.11.0",
+    "gulp-livereload": "~3.8.0",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-minify-css": "~1.1.6",
+    "gulp-rename": "~1.2.2",
+    "gulp-rev": "^5.0.1",
+    "gulp-rev-replace": "^0.4.2",
+    "gulp-sass": "~2.0.1",
+    "gulp-useref": "^1.2.0",
+    "run-sequence": "^1.1.1"
+  }
+}
