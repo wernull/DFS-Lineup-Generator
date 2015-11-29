@@ -22,7 +22,7 @@ gulp.task('html', function () {
 
 // Styles
 gulp.task('styles', function() {
-    return gulp.src([ 'src/scss/**/*.css', 'src/scss/**/*.scss'])
+    return gulp.src([ 'src/scss/main.scss'])
     .pipe($.sass().on('error', $.sass.logError))
     .pipe($.autoprefixer('last 2 version'))
     .pipe($.concat('main.css'))

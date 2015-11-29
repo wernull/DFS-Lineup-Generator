@@ -1,1 +1,1 @@
-var positions = {};
+/*globals DLG */
