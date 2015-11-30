@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="container">
-  <div class="row">
+  <div class="header row">
     <div class="col-md-12">
       <h1>DFS Lineup Generator</h1>
     </div>
@@ -20,11 +20,14 @@
   <div class="row">
     <div class="col-md-8">
       <p>Player List</p>
+      <label class="btn btn-primary" for="upload_csv">
+        <input id="upload_csv" type="file" style="display:none;"> Upload CSV
+      </label>
       <div class="player-list">
         
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4">
       <p>Lineup</p>
       <div class="btn-group" data-toggle="buttons">
         <label class="btn btn-primary-outline active disabled">
@@ -50,6 +53,7 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>var DLG = DLG || {};</script>
 <!-- build:js js/main.min.js -->
 <script src="/js/main.min.js"></script>
 

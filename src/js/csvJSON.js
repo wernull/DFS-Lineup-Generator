@@ -15,5 +15,5 @@ DLG.csvJSON = function(csv){
     result.push(obj);
   }
   
-  return JSON.stringify(result);
+  return result;
 };
