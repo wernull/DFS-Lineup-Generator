@@ -1,6 +1,6 @@
 /*globals DLG */
 DLG.csvJSON = function(csv){
-  var lines=csv.split('\n');
+  var lines=csv.replace(/"/g,'').split('\n');
   var result = [];
   var headers=lines[0].split(',');
 

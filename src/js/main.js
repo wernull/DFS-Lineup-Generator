@@ -2,7 +2,7 @@
 $(function() {
   if(window.location.search.indexOf('example') !== -1){
     $.get( 'example.csv', function(data) {
-      console.log(DLG.csvJSON(data));
+      consumeData(data);
     });
   }
 
@@ -10,10 +10,15 @@ $(function() {
     var file = e.target.files[0];
     var reader = new FileReader();
     reader.onload = function() {
-      console.log(DLG.csvJSON(this.result));
+      consumeData(this.result);
     };
-    console.log(file);
     reader.readAsText(file);
   });
+
+  function consumeData(data){
+    DLG.players = DLG.csvJSON(data);
+    console.log(DLG.csvJSON(data));
+    DLG.updatePlayerList();
+  }
 
 });
